@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    /*background-color: black;*/
+    box-sizing: border-boxs;
+
+}
+.menu a{
+    
+    font-size: 2rem;
+    padding: 2.7rem;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+.menu a:hover{
+    background-color: white;
+    color: black;
+}
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /*letra no meio*/    
+}
+.menu li{
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+}
+.menu nav{
+    background-color: black;
+    height: 5rem;
+    border-bottom: 2px solid rgb(255, 255, 255);
+
+}
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+}
+#diferente{
+    color: red;
+    font-family: 'Squada One', cursive;
+
+}
+.menu{
+    border-bottom: 2px solid rgb(255, 255, 255);
+
+}
+/*abaixo de menu*/
+.walpaper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+.walpaper img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+
+}
+header{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+/*menu mobile*/
+.hamburguer{
+    /*background-color: blueviolet;*/
+    position: fixed;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    z-index: 100;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    right: 2rem;
+    top: 2rem;
+    display: none;
+}
+.line{
+    width: 100%;
+    background-color: rgb(114, 111, 111);
+    height: .3rem;
+    box-shadow: black;
+    
+}
+.show-menu .hamburguer{
+    right: 15rem;
+    
+}
+ .sidebar{
+    width: 20rem;
+    height: 100vh;
+    background-color: #B22222;
+    position: fixed;
+    top: 0;
+    right: -20rem;
+    transition: all .3s;
+}
+.show-menu .sidebar{
+    right: 0;
+}
+.menu-item{
+    list-style: none;
+}
+/*Comidas PT2*/
+.fotos-comida div{
+    display: inline-block;
+}
+.text-img{
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+    overflow: hidden;
+    
+}
+.text-img p{
+    margin-left: 1rem;
+
+    font-size: 1.5rem;
+    font-family: 'Squada One', cursive;
+
+}
+.fotos-comida{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.title-fotos h1{
+
+    font-size: 2rem;
+    border-bottom: solid 3px black;
+    margin-bottom: 1.5rem;
+    font-family: 'Lato', sans-serif;
+
+}
+.title-fotos{
+    margin-top: 0.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.p2{
+    margin-left: 1rem;
+}
+/*fotos da equipe*/
+.fotos-equipe{
+    display: flex;
+    flex-wrap: wrap;
+
+    /**width: 100%;*/
+    background: black;
+    height: 420px;
+    align-items: center;
+    justify-content: center;
+}
+.fotos-equip{
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fotos-equip h1{
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 10px;
+}
+.text-equipe h1{
+    color: white;
+}
+/*contatos*/
+
+.rodape{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(255, 0, 0, 0.493);
+}
+.redes{
+    /*border: 1px solid black;*/
+    width: 500px;
+    height: 110px;
+    /*display: flex;
+    flex-wrap: wrap;*/
+
+}
+.contatos{
+    /*border: 1px solid black;*/
+    width: 500px;
+    height: 160px;
+    /*display: flex;
+    flex-wrap: wrap;*/
+    font-family: 'Squada One', cursive;
+
+}
+.redes h2{
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+
+}
+.redes-icons{
+    flex-wrap: wrap;
+    display: flex;
+    
+    /*justify-content: space-evenly;*/
+}
+.redes-icons a{
+    margin-left: 8px;
+}
+.contatos h2{
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+}
+.contatos p{
+    font-size: 1.5rem;
+}
+@media screen and (max-width: 984px){
+    .menu{
+        display: none;
+    }
+    .hamburguer{
+        display: flex;
+    }
+    .menu-mobile{
+        margin-top: 5rem;
+    }
+    .menu-mobile li{
+        background-color: none;
+        text-align: center;
+        margin-bottom: 2rem;
+        list-style: none;
+    }
+    .menu-mobile a{
+        color: white;
+        font-size: 2rem;
+        font-family: 'Lato', sans-serif;
+        text-decoration: none;
+
+    }
+    .menu-mobile a:hover{
+        background-color: white;
+        color: black;
+        padding: 6px 6px 6px 6px;
+    }
+    #diferente-mobile{
+        color: black;
+        font-family: 'Squada One', cursive;
+        
+    }
+    .social-media{
+        width: 100%;
+        height: 2rem;
+        display: flex;
+        justify-content: space-evenly;
+        position: absolute;
+    }
+    .social-media i{
+        font-size: 2.5rem;
+        color: #555;
+        height: 2.5rem;
+        width: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255, 252, 252);
+    }
+    .text-img{
+        width: 300px;
+        height: 350px;
+        object-fit: cover;
+        overflow: hidden;
+        
+    }
+    .fotos-equip{
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        object-fit: cover;
+        display: flex;
+        flex-wrap: wrap;
+    }.fotos-equipe{
+        display: flex;
+        flex-wrap: wrap;
+    
+        /**width: 100%;*/
+        background: black;
+        height: 650px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+
